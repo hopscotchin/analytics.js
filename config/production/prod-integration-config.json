@@ -1,0 +1,58 @@
+{
+   "Alexa":{
+      "account":"iwPzo1IWhe10Y8",
+      "domain":"hopscotch.in"
+   },
+   "Facebook Pixel":{
+      "initWithExistingTraits":false,
+      "legacyEvents":{
+
+      },
+      "pixelId":"290571754476244",
+      "standardEvents":{
+         "checkout_initiated":"InitiateCheckout",
+         "customer_registered":"CompleteRegistration",
+         "order_placed":"Purchase",
+         "product_added_to_cart":"AddToCart",
+         "product_viewed":"ViewContent",
+         "products_searched":"Search"
+      },
+      "valueIdentifier":"price"
+   },
+   "Blueshift":{
+      "apiKey":"6575105f510ad620e60f1f725ede4871",
+      "retarget":false
+   },
+   "Amplitude":{
+      "apiKey":"029fe5a02f2756232b6b59672a7ec9cf",
+      "batchEvents":false,
+      "deviceIdFromUrlParam":false,
+      "eventUploadPeriodMillis":30000,
+      "eventUploadThreshold":30,
+      "forceHttps":false,
+      "groupTypeTrait":"",
+      "groupValueTrait":"",
+      "mapQueryParams":{
+
+      },
+      "saveParamsReferrerOncePerSession":true,
+      "trackAllPages":false,
+      "trackAllPagesV2":false,
+      "trackCategorizedPages":true,
+      "trackGclid":false,
+      "trackNamedPages":true,
+      "trackReferrer":true,
+      "trackRevenuePerProduct":false,
+      "trackSessionEvents":false,
+      "trackUtmProperties":true,
+      "useLogRevenueV2":true
+   },
+   "Segment.io":{
+      "apiKey":"tkcZdyfGb1eWlV5HDTC0iGCCzLW5fyyx",
+      "unbundledIntegrations":[
+
+      ],
+      "addBundledMetadata":true,
+      "retryQueue":true
+   }
+}
