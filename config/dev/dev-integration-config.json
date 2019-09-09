@@ -1,4 +1,4 @@
-{
+/*{
    "Blueshift":{
       "apiKey":"2ce9a1140178c6c70796723e0f34dbfc",
       "retarget":false
@@ -35,4 +35,20 @@
       "addBundledMetadata":true,
       "retryQueue":true
    }
+}
+*/
+
+
+{
+  "Blueshift":{
+     "apiKey":"2ce9a1140178c6c70796723e0f34dbfc",
+     "retarget":false
+  },"Segment.io":{
+     "apiKey": "7PuAhLP93vH2bthCMGeSLTrWGYrKD1Xb",
+     "unbundledIntegrations":[
+
+     ],
+     "addBundledMetadata":true,
+     "retryQueue":true
+  }
 }
