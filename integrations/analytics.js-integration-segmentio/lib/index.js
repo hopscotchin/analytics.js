@@ -58,7 +58,7 @@ var queueOptions = {
 
 var Segment = exports = module.exports = integration('Segment.io')
   .option('apiKey', '')
-  .option('apiHost', 'segment-uat.hopscotch.in')
+  .option('apiHost', 'segment-uat.hopscotch.in')    // for production use "segment.hopscotch.in"
   .option('crossDomainIdServers', [])
   .option('deleteCrossDomainId', false)
   .option('saveCrossDomainIdInLocalStorage', true)

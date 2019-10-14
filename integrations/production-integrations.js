@@ -5,7 +5,6 @@
  */
 module.exports = {
   'alexa': require('./analytics.js-integration-alexa/lib'),
-  'amplitude': require('./analytics.js-integration-amplitude/lib'),
   'blueshift': require('./analytics.js-integration-blueshift/lib'),
   'segmentio': require('./analytics.js-integration-segmentio/lib'),
   'facebook-pixel': require('./analytics.js-integration-facebook-pixel/lib'),

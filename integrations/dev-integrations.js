@@ -7,7 +7,6 @@
  Make sure the integrations added are also installed and saved in the package.json
  */
 module.exports = {
-  'amplitude': require('./analytics.js-integration-amplitude/lib'),
   'blueshift': require('./analytics.js-integration-blueshift/lib'),
   'segmentio': require('./analytics.js-integration-segmentio/lib'),
 };

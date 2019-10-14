@@ -1,0 +1,38 @@
+Segment Integration replacement :
+
+1. Go to '/integrations/analytics.js-integration-segmentio/lib/index.js'
+
+2. change apiHost (backened endpoint) as per to your requirement (line number = 61 )
+    eg. for test env (qa, uat),  apiHost = segment-uat.hopscotch.in
+        for production env, apiHost = segment.hopscotch.in
+
+3. Go to '/lib/index.js'
+
+4. Import Integrations as per your requirement (line number = 9)
+    (add required Integrations in integration folder and make an entry in respective env integration file)
+    for test env (qa, uat),  var Integrations = require('../integrations/dev-integrations.js');
+        for production env, var Integrations = require('../integrations/production-integrations.js');
+
+5. run "make build" command (Node version should be v0.12.0)
+    This will generate analytics.js and analytics.min.js files
+    (check presence of apiHost(mentioned in 2nd point) in that files)
+
+6. add required JSON configuration in '/config/${ENV}/${ENV}-integration-config.json'
+    Then encrypt that JSON(stringify) using base64 encryption (atob and btob),
+    now add/update that encrypted string in '/config/${ENV}/config.json' file.
+
+7. Add/Upload latest created below mentioned files on respective CDN
+
+    /analytics.js
+    /analytics.min.js
+    /config/${ENV}/config.json
+
+    CDN Location :
+            dev env => "https://qastatic.hopscotch.in/sass-dev/${files}"
+            production => "https://static.hopscotch.in/sass-prod/${files}"
+
+    (IMP NOTE:  Ask devops team to clear CDN cache as well.)
+
+8. Add minified version of analytics-script.js in index.html of your project.
+
+Now it should work as expected.
